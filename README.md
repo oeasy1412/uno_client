@@ -10,15 +10,13 @@
 
 #### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  在根目录执行 `make` 命令，生成app.exe
+2.  （若要将 app.exe 移动到其他文件夹）需要将music文件夹，imgui.ini，config.cfg 同 app.exe 放在同一个文件夹内。
 
 #### 使用说明
 
-1.  本分支为客户端仓库UNO_ImGui的master分支，若寻找服务端请访问 服务端仓库UNO_Server，谢谢！
-2.  config.cfg 配置文件中填写服务器地址:25565端口号
-3.  发行版中需要winmm.dll（大多数情况下请无视此条）
+1.  本分支为客户端仓库 `UNO_ImGui` 的 master 分支，若寻找服务端请访问 服务端仓库 UNO_Server ，谢谢！
+2.  config.cfg 配置文件中填写 `服务器地址:25565端口号`
 
 #### 参与贡献
 

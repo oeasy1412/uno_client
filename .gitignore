@@ -1,3 +1,7 @@
+# In vscode
+.vscode
+build
+
 # Prerequisites
 *.d
 
@@ -30,6 +34,3 @@
 *.exe
 *.out
 *.app
-
-# In vscode
-.vscode

@@ -1,4 +1,4 @@
-project(test_hello)
+project(test_update)
 
 file(GLOB TEST_LIST ${CMAKE_CURRENT_SOURCE_DIR}/*.cpp)
 add_executable(${PROJECT_NAME} ${TEST_LIST} ${SRC}/client.cpp)
@@ -19,7 +19,7 @@ target_include_directories(${PROJECT_NAME}
 )
 
 add_test(
-    NAME hello_test
+    NAME test_update_test
     COMMAND ${PROJECT_NAME}
 )
 

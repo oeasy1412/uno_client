@@ -35,3 +35,4 @@ set(EXECUTABLE_OUTPUT_PATH ${OUTPUT})
 set(SRC ${CMAKE_CURRENT_SOURCE_DIR}/UNO_ImGui)
 
 add_subdirectory(test/test_hello)
+add_subdirectory(test/test_update)

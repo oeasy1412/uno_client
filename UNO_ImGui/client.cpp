@@ -54,7 +54,7 @@ void login_to_server(std::string& information,
     client = new httplib::Client(server_address);
     client->set_keep_alive(true);
     std::cout << "请输入玩家昵称：\n";
-    std:: cin >> p_name;
+    std::cin >> p_name;
     // 向服务端传输玩家昵称
     httplib::Headers headers{{"Name", p_name}};
     httplib::Result result = client->Post("/login", headers);

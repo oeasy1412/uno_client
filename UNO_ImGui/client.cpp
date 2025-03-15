@@ -1,9 +1,6 @@
 #include "../thirdparty/httplib.h"
 
-#include <cstdio>
-#include <fstream>
 #include <iostream>
-#include <sstream>
 #include <string>
 #include "map.h"
 #include "def.h"
@@ -194,7 +191,7 @@ void to_query_change(std::string& information) {
             information += "转色失败！无法连接到服务器！\n";
             exit(-1);
         }
-        information += "You change color into " + ToString[x - 1] + '\n';
+        information += "You change color into " + ToString[(char)(x - 1)] + '\n';
     }
 }
 

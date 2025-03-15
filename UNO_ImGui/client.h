@@ -2,7 +2,15 @@
 #define _CLIENT_H_
 
 #include <string>
-
+// #include <ranges>
+// const char* convert_u8(const std::u8string& u8_str) {
+//     // auto view = u8_str | std::views::transform([](char8_t c) -> char { return static_cast<char>(c); });
+//     // return std::string(view.begin(), view.end()).c_str();
+//     std::string str;
+//     str.resize(u8_str.length());
+//     std::transform(u8_str.begin(), u8_str.end(), str.begin(), [](char8_t c) -> char { return static_cast<char>(c); });
+//     return str.c_str();
+// }
 void to_hello(std::string& information);
 void login_to_server(std::string& information, std::string& p_name, std::string& my_str);
 void to_get_start(std::string& information, bool& isStart);

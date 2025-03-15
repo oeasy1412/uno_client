@@ -9,6 +9,8 @@ file(GLOB SRC_LIST ${CMAKE_CURRENT_SOURCE_DIR}/UNO_ImGui/*.cpp)
 # include_directories(${PROJECT_SOURCE_DIR}/thirdparty)
 add_executable(app ${SRC_LIST})
 
+enable_testing()
+
 target_link_libraries(app PRIVATE
     d3d11
     dwmapi
@@ -16,6 +18,7 @@ target_link_libraries(app PRIVATE
     d3dcompiler
     ws2_32
     winmm
+    pthread
 )
 target_compile_options(app PRIVATE
     -static-libgcc
@@ -24,5 +27,11 @@ target_compile_options(app PRIVATE
     # -DNDEBUG
 )
 
+
 set(OUTPUT ${CMAKE_SOURCE_DIR})
 set(EXECUTABLE_OUTPUT_PATH ${OUTPUT})
+
+# test
+set(SRC ${CMAKE_CURRENT_SOURCE_DIR}/UNO_ImGui)
+
+add_subdirectory(test/test_hello)

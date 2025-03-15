@@ -1,7 +1,12 @@
-#define DEBUG 1
+#ifndef _DEF_H_
+#define _DEF_H_
+
+#define DEBUG 0
 
 #if DEBUG == 1
 #define LOG(x) std::cout << x << '\n'
-#elif define(LOG_RELEASE)
+#else
 #define LOG(x)
+#endif
+
 #endif

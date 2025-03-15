@@ -10,7 +10,7 @@
 
 #### 安装教程
 
-1.  在根目录执行 `make` 命令，生成app.exe
+1.  在根目录执行 `cmake build` 命令，生成 `app.exe` 
 2.  （若要将 app.exe 移动到其他文件夹）需要将music文件夹，imgui.ini，config.cfg 同 app.exe 放在同一个文件夹内。
 
 #### 使用说明

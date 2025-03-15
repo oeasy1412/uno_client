@@ -1,6 +1,11 @@
 cmake_minimum_required(VERSION 3.15)
 
-project(uno_client)
+project(uno_client
+    VERSION 1.4.1
+    DESCRIPTION "UNO_client"
+    HOMEPAGE_URL "https://github.com/oeasy1412/uno_client"
+    LANGUAGES CXX
+)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
